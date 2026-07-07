@@ -1,0 +1,4507 @@
+TITLE: Normal distribution
+
+In probability theory and statistics, a normal distribution or Gaussian distribution is a type of continuous probability distribution for a real-valued random variable. The general form of its probability density function is
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          
+            1
+            
+              2
+              π
+              
+                σ
+                
+                  2
+                
+              
+            
+          
+        
+        exp
+        ⁡
+        
+          
+            (
+            
+              −
+              
+                
+                  
+                    (
+                    x
+                    −
+                    μ
+                    
+                      )
+                      
+                        2
+                      
+                    
+                  
+                  
+                    2
+                    
+                      σ
+                      
+                        2
+                      
+                    
+                  
+                
+              
+            
+            )
+          
+        
+        
+        .
+      
+    
+    {\displaystyle f(x)={\frac {1}{\sqrt {2\pi \sigma ^{2}}}}\exp {\left(-{\frac {(x-\mu )^{2}}{2\sigma ^{2}}}\right)}\,.}
+  
+
+The parameter ⁠
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+⁠ is the mean or expectation of the distribution (and also its median and mode), while the parameter 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\textstyle \sigma ^{2}}
+  
+ is the variance. The standard deviation of the distribution is the positive value ⁠
+  
+    
+      
+        σ
+      
+    
+    {\displaystyle \sigma }
+  
+⁠ (sigma). A random variable with a Gaussian distribution is said to be normally distributed and is called a normal deviate.
+Normal distributions are important in statistics and are often used in the natural and social sciences to represent real-valued random variables whose distributions are not known. Their importance is partly due to the central limit theorem. It states that the average of many statistically independent samples (observations) of a random variable with finite mean and variance is itself a random variable—whose distribution converges to a normal distribution as the number of samples increases. Therefore, physical quantities that are expected to be the sum of many independent processes, such as measurement errors, often have distributions that are nearly normal.
+Moreover, Gaussian distributions have some unique properties that are valuable in analytic studies. For instance, any linear combination of a fixed collection of independent normal deviates is a normal deviate. Many results and methods, such as propagation of uncertainty and least squares parameter fitting, can be derived analytically in explicit form when the relevant variables are normally distributed.
+A normal distribution is sometimes informally called a bell curve. However, many other distributions are bell-shaped (such as the Cauchy, Student's t, and logistic distributions). (For other names, see Naming.)
+The univariate probability distribution is generalized for vectors in the multivariate normal distribution and for matrices in the matrix normal distribution.
+
+
+== Definitions ==
+
+
+=== Standard normal distribution ===
+The simplest case of a normal distribution is known as the standard normal distribution or unit normal distribution. This is a special case when 
+  
+    
+      
+        μ
+        =
+        0
+      
+    
+    {\textstyle \mu =0}
+  
+ and 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+        =
+        1
+      
+    
+    {\textstyle \sigma ^{2}=1}
+  
+, and it is described by this probability density function (or density):
+
+  
+    
+      
+        φ
+        (
+        z
+        )
+        =
+        
+          
+            
+              e
+              
+                −
+                
+                  z
+                  
+                    2
+                  
+                
+                
+                  /
+                
+                2
+              
+            
+            
+              2
+              π
+            
+          
+        
+        
+        .
+      
+    
+    {\displaystyle \varphi (z)={\frac {e^{-z^{2}/2}}{\sqrt {2\pi }}}\,.}
+  
+
+The variable ⁠
+  
+    
+      
+        z
+      
+    
+    {\displaystyle z}
+  
+⁠ has a mean of 0 and a variance and standard deviation of 1. The density 
+  
+    
+      
+        φ
+        (
+        z
+        )
+      
+    
+    {\textstyle \varphi (z)}
+  
+ has its peak value 
+  
+    
+      
+        
+          
+            1
+            
+              2
+              π
+            
+          
+        
+      
+    
+    {\textstyle {\frac {1}{\sqrt {2\pi }}}}
+  
+ at 
+  
+    
+      
+        z
+        =
+        0
+      
+    
+    {\textstyle z=0}
+  
+ and inflection points at 
+  
+    
+      
+        z
+        =
+        +
+        1
+      
+    
+    {\textstyle z=+1}
+  
+ and ⁠
+  
+    
+      
+        z
+        =
+        −
+        1
+      
+    
+    {\displaystyle z=-1}
+  
+⁠.
+Although the density above is most commonly known as the standard normal, a few authors have used that term to describe other versions of the normal distribution. Carl Friedrich Gauss, for example, once defined the standard normal as 
+  
+    
+      
+        φ
+        (
+        z
+        )
+        =
+        
+          
+            1
+            
+              π
+            
+          
+        
+        
+          e
+          
+            −
+            
+              z
+              
+                2
+              
+            
+          
+        
+        ,
+      
+    
+    {\textstyle \varphi (z)={\frac {1}{\sqrt {\pi }}}e^{-z^{2}},}
+  
+ which has a variance of ⁠
+  
+    
+      
+        
+          
+            
+              1
+              2
+            
+          
+        
+      
+    
+    {\displaystyle {\tfrac {1}{2}}}
+  
+⁠, and Stephen Stigler once defined the standard normal as 
+  
+    
+      
+        φ
+        (
+        z
+        )
+        =
+        
+          e
+          
+            −
+            π
+            
+              z
+              
+                2
+              
+            
+          
+        
+        ,
+      
+    
+    {\textstyle \varphi (z)=e^{-\pi z^{2}},}
+  
+ which has a simple functional form and a variance of 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+        =
+        
+          
+            1
+            
+              2
+              π
+            
+          
+        
+        .
+      
+    
+    {\textstyle \sigma ^{2}={\frac {1}{2\pi }}.}
+  
+
+
+=== General normal distribution ===
+If ⁠
+  
+    
+      
+        Z
+      
+    
+    {\displaystyle Z}
+  
+⁠ is a standard normal deviate, then 
+  
+    
+      
+        X
+        =
+        σ
+        Z
+        +
+        μ
+      
+    
+    {\textstyle X=\sigma Z+\mu }
+  
+ will have a normal distribution with expected value ⁠
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+⁠ and standard deviation ⁠
+  
+    
+      
+        σ
+      
+    
+    {\displaystyle \sigma }
+  
+⁠. This is equivalent to saying that the standard normal distribution ⁠
+  
+    
+      
+        Z
+      
+    
+    {\displaystyle Z}
+  
+⁠ can be scaled/stretched by a factor of ⁠
+  
+    
+      
+        σ
+      
+    
+    {\displaystyle \sigma }
+  
+⁠ and shifted by ⁠
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+⁠ to yield a different normal distribution, called ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠.
+Conversely, if ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠ is a normal deviate with parameters ⁠
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+⁠ and 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\textstyle \sigma ^{2}}
+  
+, then this ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠ distribution can be re-scaled and shifted via the formula 
+  
+    
+      
+        Z
+        =
+        (
+        X
+        −
+        μ
+        )
+        
+          /
+        
+        σ
+      
+    
+    {\textstyle Z=(X-\mu )/\sigma }
+  
+ to convert it to the standard normal distribution. This variate is also called the standardized form of ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠.
+In particular, the probability density function for ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠ can be written in terms of the standard normal distribution ⁠
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+⁠ (with zero mean and unit variance):
+
+  
+    
+      
+        f
+        (
+        x
+        ∣
+        μ
+        ,
+        
+          σ
+          
+            2
+          
+        
+        )
+        =
+        
+          
+            1
+            σ
+          
+        
+        φ
+        
+          (
+          
+            
+              
+                x
+                −
+                μ
+              
+              σ
+            
+          
+          )
+        
+        
+        .
+      
+    
+    {\displaystyle f(x\mid \mu ,\sigma ^{2})={\frac {1}{\sigma }}\varphi \left({\frac {x-\mu }{\sigma }}\right)\,.}
+  
+
+The probability density must be scaled by 
+  
+    
+      
+        1
+        
+          /
+        
+        σ
+      
+    
+    {\textstyle 1/\sigma }
+  
+ so that the integral is still 1.
+
+
+=== Notation ===
+The probability density function of the standard normal distribution is commonly denoted by the Greek letter phi, ⁠
+  
+    
+      
+        ϕ
+      
+    
+    {\displaystyle \phi }
+  
+⁠. The variant form ⁠
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+⁠ is also used.
+The cumulative distribution function of the standard normal distribution is commonly denoted by the capital Greek letter phi, ⁠
+  
+    
+      
+        Φ
+      
+    
+    {\displaystyle \Phi }
+  
+⁠.
+The normal distribution is often referred to as 
+  
+    
+      
+        N
+        (
+        μ
+        ,
+        
+          σ
+          
+            2
+          
+        
+        )
+      
+    
+    {\textstyle N(\mu ,\sigma ^{2})}
+  
+ or ⁠
+  
+    
+      
+        
+          
+            N
+          
+        
+        (
+        μ
+        ,
+        
+          σ
+          
+            2
+          
+        
+        )
+      
+    
+    {\displaystyle {\mathcal {N}}(\mu ,\sigma ^{2})}
+  
+⁠. When a random variable ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠ is normally distributed with mean ⁠
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+⁠ and standard deviation ⁠
+  
+    
+      
+        σ
+      
+    
+    {\displaystyle \sigma }
+  
+⁠, one may write
+
+  
+    
+      
+        X
+        ∼
+        
+          
+            N
+          
+        
+        (
+        μ
+        ,
+        
+          σ
+          
+            2
+          
+        
+        )
+        .
+      
+    
+    {\displaystyle X\sim {\mathcal {N}}(\mu ,\sigma ^{2}).}
+  
+
+
+=== Alternative parameterizations ===
+Some authors advocate using the precision ⁠
+  
+    
+      
+        τ
+      
+    
+    {\displaystyle \tau }
+  
+⁠ as the parameter defining the width of the distribution, instead of the standard deviation ⁠
+  
+    
+      
+        σ
+      
+    
+    {\displaystyle \sigma }
+  
+⁠ or the variance ⁠
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \sigma ^{2}}
+  
+⁠. The precision is normally defined as the reciprocal of the variance, ⁠
+  
+    
+      
+        1
+        
+          /
+        
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 1/\sigma ^{2}}
+  
+⁠. The formula for the distribution then becomes
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          
+            
+              τ
+              
+                2
+                π
+              
+            
+          
+        
+        
+          e
+          
+            −
+            τ
+            (
+            x
+            −
+            μ
+            
+              )
+              
+                2
+              
+            
+            
+              /
+            
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle f(x)={\sqrt {\frac {\tau }{2\pi }}}e^{-\tau (x-\mu )^{2}/2}.}
+  
+
+This choice is claimed to have advantages in numerical computations when ⁠
+  
+    
+      
+        σ
+      
+    
+    {\displaystyle \sigma }
+  
+⁠ is very close to zero, and simplifies formulas in some contexts, such as in the Bayesian inference of variables with multivariate normal distribution.
+Alternatively, the reciprocal of the standard deviation 
+  
+    
+      
+        
+          τ
+          ′
+        
+        =
+        1
+        
+          /
+        
+        σ
+      
+    
+    {\textstyle \tau '=1/\sigma }
+  
+ might be defined as the precision, in which case the expression of the normal distribution becomes
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          
+            
+              τ
+              ′
+            
+            
+              2
+              π
+            
+          
+        
+        
+          e
+          
+            −
+            (
+            
+              τ
+              ′
+            
+            
+              )
+              
+                2
+              
+            
+            (
+            x
+            −
+            μ
+            
+              )
+              
+                2
+              
+            
+            
+              /
+            
+            2
+          
+        
+        .
+      
+    
+    {\displaystyle f(x)={\frac {\tau '}{\sqrt {2\pi }}}e^{-(\tau ')^{2}(x-\mu )^{2}/2}.}
+  
+
+According to Stigler, this formulation is advantageous because of a much simpler and easier-to-remember formula, and simple approximate formulas for the quantiles of the distribution.
+Normal distributions form an exponential family with natural parameters 
+  
+    
+      
+        
+          
+            θ
+            
+              1
+            
+          
+          =
+          
+            
+              μ
+              
+                σ
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\textstyle \textstyle \theta _{1}={\frac {\mu }{\sigma ^{2}}}}
+  
+ and 
+  
+    
+      
+        
+          
+            θ
+            
+              2
+            
+          
+          =
+          −
+          
+            
+              1
+              
+                2
+                
+                  σ
+                  
+                    2
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\textstyle \textstyle \theta _{2}=-{\frac {1}{2\sigma ^{2}}}}
+  
+, and natural statistics x and x2. The dual expectation parameters for normal distribution are η1 = μ and η2 = μ2 + σ2.
+
+
+=== Cumulative distribution function ===
+The cumulative distribution function (CDF) of the standard normal distribution, usually denoted with the capital Greek letter ⁠
+  
+    
+      
+        Φ
+      
+    
+    {\displaystyle \Phi }
+  
+⁠, is the integral
+
+  
+    
+      
+        Φ
+        (
+        x
+        )
+        =
+        
+          
+            1
+            
+              2
+              π
+            
+          
+        
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            x
+          
+        
+        
+          e
+          
+            −
+            
+              t
+              
+                2
+              
+            
+            
+              /
+            
+            2
+          
+        
+        
+        d
+        t
+        
+        .
+      
+    
+    {\displaystyle \Phi (x)={\frac {1}{\sqrt {2\pi }}}\int _{-\infty }^{x}e^{-t^{2}/2}\,dt\,.}
+  
+
+The related error function 
+  
+    
+      
+        erf
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\textstyle \operatorname {erf} (x)}
+  
+ gives the probability of a random variable, with normal distribution of mean 0 and variance 1/2, falling in the range ⁠
+  
+    
+      
+        [
+        −
+        x
+        ,
+        x
+        ]
+      
+    
+    {\displaystyle [-x,x]}
+  
+⁠. That is:
+
+  
+    
+      
+        erf
+        ⁡
+        (
+        x
+        )
+        =
+        
+          
+            1
+            
+              π
+            
+          
+        
+        
+          ∫
+          
+            −
+            x
+          
+          
+            x
+          
+        
+        
+          e
+          
+            −
+            
+              t
+              
+                2
+              
+            
+          
+        
+        
+        d
+        t
+        =
+        
+          
+            2
+            
+              π
+            
+          
+        
+        
+          ∫
+          
+            0
+          
+          
+            x
+          
+        
+        
+          e
+          
+            −
+            
+              t
+              
+                2
+              
+            
+          
+        
+        
+        d
+        t
+        
+        .
+      
+    
+    {\displaystyle \operatorname {erf} (x)={\frac {1}{\sqrt {\pi }}}\int _{-x}^{x}e^{-t^{2}}\,dt={\frac {2}{\sqrt {\pi }}}\int _{0}^{x}e^{-t^{2}}\,dt\,.}
+  
+
+These integrals cannot be expressed in terms of elementary functions, and are often said to be special functions. However, many numerical approximations are known; see below for more.
+The two functions are closely related, namely
+
+  
+    
+      
+        Φ
+        (
+        x
+        )
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          [
+          
+            1
+            +
+            erf
+            ⁡
+            
+              (
+              
+                
+                  x
+                  
+                    2
+                  
+                
+              
+              )
+            
+          
+          ]
+        
+        .
+      
+    
+    {\displaystyle \Phi (x)={\frac {1}{2}}\left[1+\operatorname {erf} \left({\frac {x}{\sqrt {2}}}\right)\right].}
+  
+
+For a generic normal distribution with density ⁠
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+⁠, mean ⁠
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+⁠ and variance 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\textstyle \sigma ^{2}}
+  
+, the cumulative distribution function is
+
+  
+    
+      
+        F
+        (
+        x
+        )
+        =
+        Φ
+        
+          
+            (
+            
+              
+                
+                  x
+                  −
+                  μ
+                
+                σ
+              
+            
+            )
+          
+        
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          [
+          
+            1
+            +
+            erf
+            ⁡
+            
+              (
+              
+                
+                  
+                    x
+                    −
+                    μ
+                  
+                  
+                    σ
+                    
+                      
+                        2
+                      
+                    
+                  
+                
+              
+              )
+            
+          
+          ]
+        
+        .
+      
+    
+    {\displaystyle F(x)=\Phi {\left({\frac {x-\mu }{\sigma }}\right)}={\frac {1}{2}}\left[1+\operatorname {erf} \left({\frac {x-\mu }{\sigma {\sqrt {2}}}}\right)\right].}
+  
+
+The probability that x lies between a and b with a < b is therefore
+  
+    
+      
+        P
+        ⁡
+        (
+        a
+        <
+        x
+        ≤
+        b
+        )
+        =
+        
+          
+            1
+            2
+          
+        
+        
+          [
+          
+            erf
+            ⁡
+            
+              (
+              
+                
+                  
+                    b
+                    −
+                    μ
+                  
+                  
+                    σ
+                    
+                      
+                        2
+                      
+                    
+                  
+                
+              
+              )
+            
+            −
+            erf
+            ⁡
+            
+              (
+              
+                
+                  
+                    a
+                    −
+                    μ
+                  
+                  
+                    σ
+                    
+                      
+                        2
+                      
+                    
+                  
+                
+              
+              )
+            
+          
+          ]
+        
+      
+    
+    {\displaystyle \operatorname {P} (a<x\leq b)={\frac {1}{2}}\left[\operatorname {erf} \left({\frac {b-\mu }{\sigma {\sqrt {2}}}}\right)-\operatorname {erf} \left({\frac {a-\mu }{\sigma {\sqrt {2}}}}\right)\right]}
+  
+
+The complement of the standard normal cumulative distribution function, 
+  
+    
+      
+        Q
+        (
+        x
+        )
+        =
+        1
+        −
+        Φ
+        (
+        x
+        )
+      
+    
+    {\textstyle Q(x)=1-\Phi (x)}
+  
+, is often called the Q-function, especially in engineering texts. It gives the probability that the value of a standard normal random variable ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠ will exceed ⁠
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+⁠: ⁠
+  
+    
+      
+        P
+        (
+        X
+        >
+        x
+        )
+      
+    
+    {\displaystyle P(X>x)}
+  
+⁠. Other definitions of the ⁠
+  
+    
+      
+        Q
+      
+    
+    {\displaystyle Q}
+  
+⁠-function, all of which are simple transformations of ⁠
+  
+    
+      
+        Φ
+      
+    
+    {\displaystyle \Phi }
+  
+⁠, are also used occasionally.
+The graph of the standard normal cumulative distribution function ⁠
+  
+    
+      
+        Φ
+      
+    
+    {\displaystyle \Phi }
+  
+⁠ has 2-fold rotational symmetry around the point (0,1/2); that is, ⁠
+  
+    
+      
+        Φ
+        (
+        −
+        x
+        )
+        =
+        1
+        −
+        Φ
+        (
+        x
+        )
+      
+    
+    {\displaystyle \Phi (-x)=1-\Phi (x)}
+  
+⁠. Its antiderivative (indefinite integral) can be expressed as follows:
+
+  
+    
+      
+        ∫
+        Φ
+        (
+        x
+        )
+        
+        d
+        x
+        =
+        x
+        Φ
+        (
+        x
+        )
+        +
+        φ
+        (
+        x
+        )
+        +
+        C
+        .
+      
+    
+    {\displaystyle \int \Phi (x)\,dx=x\Phi (x)+\varphi (x)+C.}
+  
+
+An asymptotic expansion of the cumulative distribution function for large x can be derived using integration by parts:
+
+  
+    
+      
+        Φ
+        (
+        x
+        )
+        =
+        
+          
+            1
+            2
+          
+        
+        +
+        
+          
+            1
+            
+              2
+              π
+            
+          
+        
+        
+          e
+          
+            −
+            
+              x
+              
+                2
+              
+            
+            
+              /
+            
+            2
+          
+        
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            1
+            
+              (
+              2
+              n
+              +
+              1
+              )
+              !
+              !
+            
+          
+        
+        
+          x
+          
+            2
+            n
+            +
+            1
+          
+        
+        
+        .
+      
+    
+    {\displaystyle \Phi (x)={\frac {1}{2}}+{\frac {1}{\sqrt {2\pi }}}e^{-x^{2}/2}\sum _{n=0}^{\infty }{\frac {1}{(2n+1)!!}}x^{2n+1}\,.}
+  
+
+where 
+  
+    
+      
+        !
+        !
+      
+    
+    {\textstyle !!}
+  
+ denotes the double factorial. For more, see Error function § Asymptotic expansion.
+
+
+==== Taylor series representation ====
+The Taylor series for the normal distribution ⁠
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+⁠ can be derived by substituting ⁠
+  
+    
+      
+        −
+        
+          
+            
+              1
+              2
+            
+          
+        
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle -{\tfrac {1}{2}}x^{2}}
+  
+⁠ into the Taylor series for the exponential function:
+
+  
+    
+      
+        φ
+        (
+        x
+        )
+        =
+        
+          
+            1
+            
+              2
+              π
+            
+          
+        
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              (
+              −
+              1
+              
+                )
+                
+                  n
+                
+              
+            
+            
+              n
+              !
+              
+              
+                2
+                
+                  n
+                
+              
+            
+          
+        
+        
+          x
+          
+            2
+            n
+          
+        
+      
+    
+    {\displaystyle \varphi (x)={\frac {1}{\sqrt {2\pi }}}\sum _{n=0}^{\infty }{\frac {(-1)^{n}}{n!\,2^{n}}}x^{2n}}
+  
+
+This series can be integrated term by term to obtain the Taylor series for the cumulative distribution function:
+
+  
+    
+      
+        Φ
+        (
+        x
+        )
+        =
+        
+          
+            1
+            2
+          
+        
+        +
+        
+          
+            1
+            
+              2
+              π
+            
+          
+        
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              (
+              −
+              1
+              
+                )
+                
+                  n
+                
+              
+            
+            
+              n
+              !
+              
+              
+                2
+                
+                  n
+                
+              
+              (
+              2
+              n
+              +
+              1
+              )
+            
+          
+        
+        
+          x
+          
+            2
+            n
+            +
+            1
+          
+        
+        .
+      
+    
+    {\displaystyle \Phi (x)={\frac {1}{2}}+{\frac {1}{\sqrt {2\pi }}}\sum _{n=0}^{\infty }{\frac {(-1)^{n}}{n!\,2^{n}(2n+1)}}x^{2n+1}.}
+  
+
+However, this series is ineffective for calculation due to slow convergence, except when ⁠
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+⁠ is small.
+Both of these series describe entire functions, which converge for all real and complex values of ⁠
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+⁠.
+
+
+==== Recursive computation with Taylor series ====
+The recurrence relation for Hermite polynomials Hen(x) may be used to efficiently construct the Taylor series expansion about any point x0:
+
+  
+    
+      
+        Φ
+        (
+        x
+        )
+        =
+        
+          ∑
+          
+            n
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          
+            
+              
+                Φ
+                
+                  (
+                  n
+                  )
+                
+              
+              (
+              
+                x
+                
+                  0
+                
+              
+              )
+            
+            
+              n
+              !
+            
+          
+        
+        (
+        x
+        −
+        
+          x
+          
+            0
+          
+        
+        
+          )
+          
+            n
+          
+        
+        
+        ,
+      
+    
+    {\displaystyle \Phi (x)=\sum _{n=0}^{\infty }{\frac {\Phi ^{(n)}(x_{0})}{n!}}(x-x_{0})^{n}\,,}
+  
+
+where:
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  Φ
+                  
+                    (
+                    0
+                    )
+                  
+                
+                (
+                
+                  x
+                  
+                    0
+                  
+                
+                )
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      2
+                      π
+                    
+                  
+                
+                
+                  ∫
+                  
+                    −
+                    ∞
+                  
+                  
+                    
+                      x
+                      
+                        0
+                      
+                    
+                  
+                
+                
+                  e
+                  
+                    −
+                    
+                      t
+                      
+                        2
+                      
+                    
+                    
+                      /
+                    
+                    2
+                  
+                
+                
+                d
+                t
+              
+            
+            
+              
+                
+                  Φ
+                  
+                    (
+                    1
+                    )
+                  
+                
+                (
+                
+                  x
+                  
+                    0
+                  
+                
+                )
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      2
+                      π
+                    
+                  
+                
+                
+                  e
+                  
+                    −
+                    
+                      x
+                      
+                        0
+                      
+                      
+                        2
+                      
+                    
+                    
+                      /
+                    
+                    2
+                  
+                
+              
+            
+            
+              
+                
+                  Φ
+                  
+                    (
+                    n
+                    )
+                  
+                
+                (
+                
+                  x
+                  
+                    0
+                  
+                
+                )
+              
+              
+                
+                =
+                −
+                
+                  (
+                  
+                    
+                      x
+                      
+                        0
+                      
+                    
+                    
+                      Φ
+                      
+                        (
+                        n
+                        −
+                        1
+                        )
+                      
+                    
+                    (
+                    
+                      x
+                      
+                        0
+                      
+                    
+                    )
+                    +
+                    (
+                    n
+                    −
+                    2
+                    )
+                    
+                      Φ
+                      
+                        (
+                        n
+                        −
+                        2
+                        )
+                      
+                    
+                    (
+                    
+                      x
+                      
+                        0
+                      
+                    
+                    )
+                  
+                  )
+                
+                ,
+              
+              
+                n
+                ≥
+                2
+                
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\Phi ^{(0)}(x_{0})&={\frac {1}{\sqrt {2\pi }}}\int _{-\infty }^{x_{0}}e^{-t^{2}/2}\,dt\\\Phi ^{(1)}(x_{0})&={\frac {1}{\sqrt {2\pi }}}e^{-x_{0}^{2}/2}\\\Phi ^{(n)}(x_{0})&=-\left(x_{0}\Phi ^{(n-1)}(x_{0})+(n-2)\Phi ^{(n-2)}(x_{0})\right),&n\geq 2\,.\end{aligned}}}
+  
+
+
+==== Standard deviation and coverage ====
+
+About 68% of values drawn from a normal distribution are within one standard deviation σ from the mean; about 95% of the values lie within two standard deviations; and about 99.7% are within three standard deviations. This is known as the 68–95–99.7 (empirical) rule, or the 3-sigma rule.
+More precisely, the probability that a normal deviate lies in the range between 
+  
+    
+      
+        μ
+        −
+        n
+        σ
+      
+    
+    {\textstyle \mu -n\sigma }
+  
+ and 
+  
+    
+      
+        μ
+        +
+        n
+        σ
+      
+    
+    {\textstyle \mu +n\sigma }
+  
+ is given by
+
+  
+    
+      
+        F
+        (
+        μ
+        +
+        n
+        σ
+        )
+        −
+        F
+        (
+        μ
+        −
+        n
+        σ
+        )
+        =
+        Φ
+        (
+        n
+        )
+        −
+        Φ
+        (
+        −
+        n
+        )
+        =
+        erf
+        ⁡
+        
+          (
+          
+            
+              n
+              
+                2
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle F(\mu +n\sigma )-F(\mu -n\sigma )=\Phi (n)-\Phi (-n)=\operatorname {erf} \left({\frac {n}{\sqrt {2}}}\right).}
+  
+
+To 12 significant digits, the values for 
+  
+    
+      
+        n
+        =
+        1
+        ,
+        2
+        ,
+        …
+        ,
+        6
+      
+    
+    {\textstyle n=1,2,\ldots ,6}
+  
+ are:
+
+For large ⁠
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+⁠, one can use the approximation 
+  
+    
+      
+        1
+        −
+        p
+        ≈
+        
+          
+            
+              2
+            
+            
+              n
+              
+                
+                  π
+                  
+                    e
+                    
+                      
+                        n
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle 1-p\approx {\frac {\sqrt {2}}{n{\sqrt {\pi e^{n^{2}}}}}}}
+  
+
+
+==== Quantile function ====
+
+The quantile function of a distribution is the inverse of the cumulative distribution function. The quantile function of the standard normal distribution is called the probit function, and can be expressed in terms of the inverse error function:
+
+  
+    
+      
+        
+          Φ
+          
+            −
+            1
+          
+        
+        (
+        p
+        )
+        =
+        
+          
+            2
+          
+        
+        
+          erf
+          
+            −
+            1
+          
+        
+        ⁡
+        (
+        2
+        p
+        −
+        1
+        )
+        ,
+        
+        p
+        ∈
+        (
+        0
+        ,
+        1
+        )
+        .
+      
+    
+    {\displaystyle \Phi ^{-1}(p)={\sqrt {2}}\operatorname {erf} ^{-1}(2p-1),\quad p\in (0,1).}
+  
+
+For a normal random variable with mean ⁠
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+⁠ and variance 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\textstyle \sigma ^{2}}
+  
+, the quantile function is
+
+  
+    
+      
+        
+          F
+          
+            −
+            1
+          
+        
+        (
+        p
+        )
+        =
+        μ
+        +
+        σ
+        
+          Φ
+          
+            −
+            1
+          
+        
+        (
+        p
+        )
+        =
+        μ
+        +
+        σ
+        
+          
+            2
+          
+        
+        
+          erf
+          
+            −
+            1
+          
+        
+        ⁡
+        (
+        2
+        p
+        −
+        1
+        )
+        ,
+        
+        p
+        ∈
+        (
+        0
+        ,
+        1
+        )
+        .
+      
+    
+    {\displaystyle F^{-1}(p)=\mu +\sigma \Phi ^{-1}(p)=\mu +\sigma {\sqrt {2}}\operatorname {erf} ^{-1}(2p-1),\quad p\in (0,1).}
+  
+
+The quantile 
+  
+    
+      
+        
+          Φ
+          
+            −
+            1
+          
+        
+        (
+        p
+        )
+      
+    
+    {\textstyle \Phi ^{-1}(p)}
+  
+ of the standard normal distribution is commonly denoted as ⁠
+  
+    
+      
+        
+          z
+          
+            p
+          
+        
+      
+    
+    {\displaystyle z_{p}}
+  
+⁠. These values are used in hypothesis testing, construction of confidence intervals and Q–Q plots. A normal random variable ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠ will exceed 
+  
+    
+      
+        μ
+        +
+        
+          z
+          
+            p
+          
+        
+        σ
+      
+    
+    {\textstyle \mu +z_{p}\sigma }
+  
+ with probability 
+  
+    
+      
+        1
+        −
+        p
+      
+    
+    {\textstyle 1-p}
+  
+, and will lie outside the interval 
+  
+    
+      
+        μ
+        ±
+        
+          z
+          
+            p
+          
+        
+        σ
+      
+    
+    {\textstyle \mu \pm z_{p}\sigma }
+  
+ with probability ⁠
+  
+    
+      
+        2
+        (
+        1
+        −
+        p
+        )
+      
+    
+    {\displaystyle 2(1-p)}
+  
+⁠. In particular, the quantile 
+  
+    
+      
+        
+          z
+          
+            0.975
+          
+        
+      
+    
+    {\textstyle z_{0.975}}
+  
+ is 1.96; therefore a normal random variable will lie outside the interval 
+  
+    
+      
+        μ
+        ±
+        1.96
+        σ
+      
+    
+    {\textstyle \mu \pm 1.96\sigma }
+  
+ in only 5% of cases.
+The following table gives the quantile 
+  
+    
+      
+        
+          z
+          
+            p
+          
+        
+      
+    
+    {\textstyle z_{p}}
+  
+ such that ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠ will lie in the range 
+  
+    
+      
+        μ
+        ±
+        
+          z
+          
+            p
+          
+        
+        σ
+      
+    
+    {\textstyle \mu \pm z_{p}\sigma }
+  
+ with a specified probability ⁠
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+⁠. These values are useful to determine tolerance interval for sample averages and other statistical estimators with normal (or asymptotically normal) distributions. The following table shows 
+  
+    
+      
+        
+          
+            2
+          
+        
+        
+          erf
+          
+            −
+            1
+          
+        
+        ⁡
+        (
+        p
+        )
+        =
+        
+          Φ
+          
+            −
+            1
+          
+        
+        
+          (
+          
+            
+              
+                p
+                +
+                1
+              
+              2
+            
+          
+          )
+        
+      
+    
+    {\textstyle {\sqrt {2}}\operatorname {erf} ^{-1}(p)=\Phi ^{-1}\left({\frac {p+1}{2}}\right)}
+  
+, not 
+  
+    
+      
+        
+          Φ
+          
+            −
+            1
+          
+        
+        (
+        p
+        )
+      
+    
+    {\textstyle \Phi ^{-1}(p)}
+  
+ as defined above.
+
+For small ⁠
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+⁠, the quantile function has the useful asymptotic expansion
+
+  
+    
+      
+        
+          Φ
+          
+            −
+            1
+          
+        
+        (
+        p
+        )
+        =
+        −
+        
+          
+            ln
+            ⁡
+            
+              
+                1
+                
+                  p
+                  
+                    2
+                  
+                
+              
+            
+            −
+            ln
+            ⁡
+            ln
+            ⁡
+            
+              
+                1
+                
+                  p
+                  
+                    2
+                  
+                
+              
+            
+            −
+            ln
+            ⁡
+            (
+            2
+            π
+            )
+          
+        
+        +
+        
+          
+            o
+          
+        
+        (
+        1
+        )
+        .
+      
+    
+    {\textstyle \Phi ^{-1}(p)=-{\sqrt {\ln {\frac {1}{p^{2}}}-\ln \ln {\frac {1}{p^{2}}}-\ln(2\pi )}}+{\mathcal {o}}(1).}
+  
+
+
+==== Using root finding to compute the quantile function ====
+Any of the described approaches for computing the cumulative distribution function 
+  
+    
+      
+        Φ
+        (
+        x
+        )
+      
+    
+    {\textstyle \Phi (x)}
+  
+ can be used with Newton's method (or another root-finding algorithm such as Halley's method) to find the value of ⁠
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+⁠ for which ⁠
+  
+    
+      
+        Φ
+        (
+        x
+        )
+        =
+        q
+      
+    
+    {\displaystyle \Phi (x)=q}
+  
+⁠ for some desired quantile ⁠
+  
+    
+      
+        q
+      
+    
+    {\displaystyle q}
+  
+⁠.  For example, starting with an initial, approximately correct guess ⁠
+  
+    
+      
+        
+          x
+          
+            0
+          
+        
+      
+    
+    {\displaystyle x_{0}}
+  
+⁠, increasingly better approximations ⁠
+  
+    
+      
+        
+          x
+          
+            1
+          
+        
+      
+    
+    {\displaystyle x_{1}}
+  
+⁠, ⁠
+  
+    
+      
+        
+          x
+          
+            2
+          
+        
+      
+    
+    {\displaystyle x_{2}}
+  
+⁠, ... can be calculated iteratively using Newton's method with
+
+  
+    
+      
+        
+          x
+          
+            n
+          
+        
+        =
+        
+          x
+          
+            n
+            −
+            1
+          
+        
+        −
+        
+          
+            
+              Φ
+              (
+              
+                x
+                
+                  n
+                  −
+                  1
+                
+              
+              )
+              −
+              q
+            
+            
+              φ
+              (
+              
+                x
+                
+                  n
+                  −
+                  1
+                
+              
+              )
+            
+          
+        
+        
+        .
+      
+    
+    {\displaystyle x_{n}=x_{n-1}-{\frac {\Phi (x_{n-1})-q}{\varphi (x_{n-1})}}\,.}
+  
+
+
+== Properties ==
+The normal distribution is the only distribution whose cumulants beyond the first two (i.e., other than the mean and variance) are zero. It is also the continuous distribution with the maximum entropy for a specified mean and variance. Geary has shown, assuming that the mean and variance are finite, that the normal distribution is the only distribution where the mean and variance calculated from a set of independent draws are independent of each other.
+The normal distribution is a subclass of the elliptical distributions. The normal distribution is symmetric about its mean, and is non-zero over the entire real line. As such it may not be a suitable model for variables that are inherently positive or strongly skewed, such as the weight of a person or the price of a share of stock. Such variables may be better described by other distributions, such as the log-normal distribution or the Pareto distribution.
+The value of the normal density is practically zero when the value ⁠
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+⁠ lies more than a few standard deviations away from the mean (e.g., a spread of three standard deviations covers all but 0.27% of the total distribution). Therefore, it may not be an appropriate model when one expects a significant fraction of outliers—values that lie many standard deviations away from the mean—and least squares and other statistical inference methods that are optimal for normally distributed variables often become highly unreliable when applied to such data. In those cases, a more heavy-tailed distribution should be assumed and appropriate robust statistical inference methods applied.
+The Gaussian distribution belongs to the family of stable distributions which are the attractors of sums of independent, identically distributed distributions whether or not the mean or variance is finite. Except for the Gaussian which is a limiting case, all stable distributions have heavy tails and infinite variance. It is one of the few distributions that are stable and that have probability density functions that can be expressed analytically, the others being the Cauchy distribution and the Lévy distribution.
+
+
+=== Symmetries and derivatives ===
+The normal distribution with density 
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\textstyle f(x)}
+  
+ (mean ⁠
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+⁠ and variance 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+        >
+        0
+      
+    
+    {\textstyle \sigma ^{2}>0}
+  
+) has the following properties:
+
+It is symmetric around the point 
+  
+    
+      
+        x
+        =
+        μ
+        ,
+      
+    
+    {\textstyle x=\mu ,}
+  
+ which is at the same time the mode, the median and the mean of the distribution.
+It is unimodal: its first derivative is positive for 
+  
+    
+      
+        x
+        <
+        μ
+        ,
+      
+    
+    {\textstyle x<\mu ,}
+  
+ negative for 
+  
+    
+      
+        x
+        >
+        μ
+        ,
+      
+    
+    {\textstyle x>\mu ,}
+  
+ and zero only at 
+  
+    
+      
+        x
+        =
+        μ
+        .
+      
+    
+    {\textstyle x=\mu .}
+  
+
+The area bounded by the curve and the ⁠
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+⁠-axis is unity (i.e. equal to one).
+Its first derivative is 
+  
+    
+      
+        
+          f
+          ′
+        
+        (
+        x
+        )
+        =
+        −
+        
+          
+            
+              x
+              −
+              μ
+            
+            
+              σ
+              
+                2
+              
+            
+          
+        
+        f
+        (
+        x
+        )
+        .
+      
+    
+    {\textstyle f'(x)=-{\frac {x-\mu }{\sigma ^{2}}}f(x).}
+  
+
+Its second derivative is 
+  
+    
+      
+        
+          f
+          ″
+        
+        (
+        x
+        )
+        =
+        
+          
+            
+              (
+              x
+              −
+              μ
+              
+                )
+                
+                  2
+                
+              
+              −
+              
+                σ
+                
+                  2
+                
+              
+            
+            
+              σ
+              
+                4
+              
+            
+          
+        
+        f
+        (
+        x
+        )
+        .
+      
+    
+    {\textstyle f''(x)={\frac {(x-\mu )^{2}-\sigma ^{2}}{\sigma ^{4}}}f(x).}
+  
+
+Its density has two inflection points (where the second derivative of ⁠
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+⁠ is zero and changes sign), located one standard deviation away from the mean, namely at 
+  
+    
+      
+        x
+        =
+        μ
+        −
+        σ
+      
+    
+    {\textstyle x=\mu -\sigma }
+  
+ and 
+  
+    
+      
+        x
+        =
+        μ
+        +
+        σ
+        .
+      
+    
+    {\textstyle x=\mu +\sigma .}
+  
+
+Its density is log-concave.
+Its density is infinitely differentiable, indeed supersmooth of order 2.
+Furthermore, the density ⁠
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+⁠ of the standard normal distribution (i.e. 
+  
+    
+      
+        μ
+        =
+        0
+      
+    
+    {\textstyle \mu =0}
+  
+ and 
+  
+    
+      
+        σ
+        =
+        1
+      
+    
+    {\textstyle \sigma =1}
+  
+) also has the following properties:
+
+Its first derivative is 
+  
+    
+      
+        
+          φ
+          ′
+        
+        (
+        x
+        )
+        =
+        −
+        x
+        φ
+        (
+        x
+        )
+        .
+      
+    
+    {\textstyle \varphi '(x)=-x\varphi (x).}
+  
+
+Its second derivative is 
+  
+    
+      
+        
+          φ
+          ″
+        
+        (
+        x
+        )
+        =
+        (
+        
+          x
+          
+            2
+          
+        
+        −
+        1
+        )
+        φ
+        (
+        x
+        )
+      
+    
+    {\textstyle \varphi ''(x)=(x^{2}-1)\varphi (x)}
+  
+
+More generally, its nth derivative is 
+  
+    
+      
+        
+          φ
+          
+            (
+            n
+            )
+          
+        
+        (
+        x
+        )
+        =
+        (
+        −
+        1
+        
+          )
+          
+            n
+          
+        
+        
+          He
+          
+            n
+          
+        
+        ⁡
+        (
+        x
+        )
+        φ
+        (
+        x
+        )
+        ,
+      
+    
+    {\textstyle \varphi ^{(n)}(x)=(-1)^{n}\operatorname {He} _{n}(x)\varphi (x),}
+  
+ where 
+  
+    
+      
+        
+          He
+          
+            n
+          
+        
+        ⁡
+        (
+        x
+        )
+      
+    
+    {\textstyle \operatorname {He} _{n}(x)}
+  
+ is the nth (probabilist) Hermite polynomial.
+The probability that a normally distributed variable ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠ with known ⁠
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+⁠ and 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\textstyle \sigma ^{2}}
+  
+ is in a particular set, can be calculated given that the fraction 
+  
+    
+      
+        Z
+        =
+        (
+        X
+        −
+        μ
+        )
+        
+          /
+        
+        σ
+      
+    
+    {\textstyle Z=(X-\mu )/\sigma }
+  
+ has a standard normal distribution.
+
+
+=== Moments ===
+
+The plain and absolute moments of a variable ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠ are the expected values of 
+  
+    
+      
+        
+          X
+          
+            p
+          
+        
+      
+    
+    {\textstyle X^{p}}
+  
+ and 
+  
+    
+      
+        
+          |
+        
+        X
+        
+          
+            |
+          
+          
+            p
+          
+        
+      
+    
+    {\textstyle |X|^{p}}
+  
+, respectively. If the expected value ⁠
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+⁠ of ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠ is zero, these parameters are called central moments; otherwise, these parameters are called non-central moments. Usually we are interested only in moments with integer order ⁠
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+⁠.
+If ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠ has a normal distribution, the non-central moments exist and are finite for any ⁠
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+⁠ whose real part is greater than −1. For any non-negative integer ⁠
+  
+    
+      
+        p
+      
+    
+    {\displaystyle p}
+  
+⁠, the plain central moments are:
+
+  
+    
+      
+        E
+        ⁡
+        
+          [
+          
+            (
+            X
+            −
+            μ
+            
+              )
+              
+                p
+              
+            
+          
+          ]
+        
+        =
+        
+          
+            {
+            
+              
+                
+                  0
+                
+                
+                  
+                    if 
+                  
+                  p
+                  
+                     is odd,
+                  
+                
+              
+              
+                
+                  
+                    σ
+                    
+                      p
+                    
+                  
+                  (
+                  p
+                  −
+                  1
+                  )
+                  !
+                  !
+                
+                
+                  
+                    if 
+                  
+                  p
+                  
+                     is even.
+                  
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle \operatorname {E} \left[(X-\mu )^{p}\right]={\begin{cases}0&{\text{if }}p{\text{ is odd,}}\\\sigma ^{p}(p-1)!!&{\text{if }}p{\text{ is even.}}\end{cases}}}
+  
+
+Here 
+  
+    
+      
+        n
+        !
+        !
+      
+    
+    {\textstyle n!!}
+  
+ denotes the double factorial, that is, the product of all numbers from ⁠
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  
+⁠ to 1 that have the same parity as 
+  
+    
+      
+        n
+        .
+      
+    
+    {\textstyle n.}
+  
+
+The central absolute moments coincide with plain moments for all even orders, but are nonzero for odd orders. For any non-negative integer 
+  
+    
+      
+        p
+        ,
+      
+    
+    {\textstyle p,}
+  
+
+  
+    
+      
+        
+          
+            
+              
+                E
+                ⁡
+                
+                  [
+                  
+                    
+                      |
+                    
+                    X
+                    −
+                    μ
+                    
+                      
+                        |
+                      
+                      
+                        p
+                      
+                    
+                  
+                  ]
+                
+              
+              
+                
+                =
+                
+                  σ
+                  
+                    p
+                  
+                
+                (
+                p
+                −
+                1
+                )
+                !
+                !
+                ⋅
+                
+                  
+                    {
+                    
+                      
+                        
+                          
+                            
+                              
+                                2
+                                π
+                              
+                            
+                          
+                        
+                        
+                          
+                            if 
+                          
+                          p
+                          
+                             is odd
+                          
+                        
+                      
+                      
+                        
+                          1
+                        
+                        
+                          
+                            if 
+                          
+                          p
+                          
+                             is even
+                          
+                        
+                      
+                    
+                    
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  σ
+                  
+                    p
+                  
+                
+                ⋅
+                
+                  
+                    
+                      
+                        2
+                        
+                          p
+                          
+                            /
+                          
+                          2
+                        
+                      
+                      Γ
+                      
+                        (
+                        
+                          
+                            
+                              p
+                              +
+                              1
+                            
+                            2
+                          
+                        
+                        )
+                      
+                    
+                    
+                      π
+                    
+                  
+                
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\operatorname {E} \left[|X-\mu |^{p}\right]&=\sigma ^{p}(p-1)!!\cdot {\begin{cases}{\sqrt {\frac {2}{\pi }}}&{\text{if }}p{\text{ is odd}}\\1&{\text{if }}p{\text{ is even}}\end{cases}}\\[8pt]&=\sigma ^{p}\cdot {\frac {2^{p/2}\Gamma \left({\frac {p+1}{2}}\right)}{\sqrt {\pi }}}.\end{aligned}}}
+  
+
+The last formula is valid also for any non-integer 
+  
+    
+      
+        p
+        >
+        −
+        1.
+      
+    
+    {\textstyle p>-1.}
+  
+ When the mean 
+  
+    
+      
+        μ
+        ≠
+        0
+        ,
+      
+    
+    {\textstyle \mu \neq 0,}
+  
+ the plain and absolute moments can be expressed in terms of confluent hypergeometric functions 
+  
+    
+      
+        
+          
+
+          
+          
+            1
+          
+        
+        
+          F
+          
+            1
+          
+        
+      
+    
+    {\textstyle {}_{1}F_{1}}
+  
+ and 
+  
+    
+      
+        U
+        .
+      
+    
+    {\textstyle U.}
+  
+
+  
+    
+      
+        
+          
+            
+              
+                E
+                ⁡
+                
+                  [
+                  
+                    X
+                    
+                      p
+                    
+                  
+                  ]
+                
+              
+              
+                
+                =
+                
+                  σ
+                  
+                    p
+                  
+                
+                ⋅
+                
+                  
+                    
+                      (
+                      
+                        −
+                        i
+                        
+                          
+                            2
+                          
+                        
+                      
+                      )
+                    
+                  
+                  
+                    p
+                  
+                
+                
+                U
+                
+                  
+                    (
+                    
+                      −
+                      
+                        
+                          p
+                          2
+                        
+                      
+                      ,
+                      
+                        
+                          1
+                          2
+                        
+                      
+                      ,
+                      −
+                      
+                        
+                          
+                            μ
+                            
+                              2
+                            
+                          
+                          
+                            2
+                            
+                              σ
+                              
+                                2
+                              
+                            
+                          
+                        
+                      
+                    
+                    )
+                  
+                
+                ,
+              
+            
+            
+              
+                E
+                ⁡
+                
+                  [
+                  
+                    
+                      |
+                    
+                    X
+                    
+                      
+                        |
+                      
+                      
+                        p
+                      
+                    
+                  
+                  ]
+                
+              
+              
+                
+                =
+                
+                  σ
+                  
+                    p
+                  
+                
+                ⋅
+                
+                  2
+                  
+                    p
+                    
+                      /
+                    
+                    2
+                  
+                
+                
+                  
+                    
+                      Γ
+                      
+                        
+                          (
+                          
+                            
+                              
+                                1
+                                +
+                                p
+                              
+                              2
+                            
+                          
+                          )
+                        
+                      
+                    
+                    
+                      π
+                    
+                  
+                
+                
+                
+                  
+
+                  
+                  
+                    1
+                  
+                
+                
+                  F
+                  
+                    1
+                  
+                
+                
+                  
+                    (
+                    
+                      −
+                      
+                        
+                          p
+                          2
+                        
+                      
+                      ,
+                      
+                        
+                          1
+                          2
+                        
+                      
+                      ,
+                      −
+                      
+                        
+                          
+                            μ
+                            
+                              2
+                            
+                          
+                          
+                            2
+                            
+                              σ
+                              
+                                2
+                              
+                            
+                          
+                        
+                      
+                    
+                    )
+                  
+                
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\operatorname {E} \left[X^{p}\right]&=\sigma ^{p}\cdot {\left(-i{\sqrt {2}}\right)}^{p}\,U{\left(-{\frac {p}{2}},{\frac {1}{2}},-{\frac {\mu ^{2}}{2\sigma ^{2}}}\right)},\\\operatorname {E} \left[|X|^{p}\right]&=\sigma ^{p}\cdot 2^{p/2}{\frac {\Gamma {\left({\frac {1+p}{2}}\right)}}{\sqrt {\pi }}}\,{}_{1}F_{1}{\left(-{\frac {p}{2}},{\frac {1}{2}},-{\frac {\mu ^{2}}{2\sigma ^{2}}}\right)}.\end{aligned}}}
+  
+
+These expressions remain valid even when ⁠
+  
+    
+      
+        p
+        >
+        −
+        1
+      
+    
+    {\displaystyle p>-1}
+  
+⁠ is not an integer. See also generalized Hermite polynomials.
+
+The expectation of ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠ conditioned on the event that ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠ lies in an interval 
+  
+    
+      
+        [
+        a
+        ,
+        b
+        ]
+      
+    
+    {\textstyle [a,b]}
+  
+ is given by
+
+  
+    
+      
+        E
+        ⁡
+        
+          [
+          
+            X
+            ∣
+            a
+            <
+            X
+            <
+            b
+          
+          ]
+        
+        =
+        μ
+        −
+        
+          σ
+          
+            2
+          
+        
+        
+          
+            
+              f
+              (
+              b
+              )
+              −
+              f
+              (
+              a
+              )
+            
+            
+              F
+              (
+              b
+              )
+              −
+              F
+              (
+              a
+              )
+            
+          
+        
+        
+        ,
+      
+    
+    {\displaystyle \operatorname {E} \left[X\mid a<X<b\right]=\mu -\sigma ^{2}{\frac {f(b)-f(a)}{F(b)-F(a)}}\,,}
+  
+
+where ⁠
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+⁠ and ⁠
+  
+    
+      
+        F
+      
+    
+    {\displaystyle F}
+  
+⁠ respectively are the density and the cumulative distribution function of ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠. For 
+  
+    
+      
+        b
+        =
+        ∞
+      
+    
+    {\textstyle b=\infty }
+  
+ this is known as the inverse Mills ratio. Note that above, density ⁠
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+⁠ of ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠ is used instead of standard normal density as in inverse Mills ratio, so here we have 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\textstyle \sigma ^{2}}
+  
+ instead of ⁠
+  
+    
+      
+        σ
+      
+    
+    {\displaystyle \sigma }
+  
+⁠.
+
+
+=== Fourier transform and characteristic function ===
+The Fourier transform of a normal density ⁠
+  
+    
+      
+        f
+      
+    
+    {\displaystyle f}
+  
+⁠ with mean ⁠
+  
+    
+      
+        μ
+      
+    
+    {\displaystyle \mu }
+  
+⁠ and variance 
+  
+    
+      
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\textstyle \sigma ^{2}}
+  
+ is
+
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        t
+        )
+        =
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            ∞
+          
+        
+        f
+        (
+        x
+        )
+        
+          e
+          
+            −
+            i
+            t
+            x
+          
+        
+        
+        d
+        x
+        =
+        
+          e
+          
+            −
+            i
+            μ
+            t
+          
+        
+        
+          e
+          
+            −
+            
+              
+                1
+                2
+              
+            
+            
+              σ
+              
+                2
+              
+            
+            
+              t
+              
+                2
+              
+            
+          
+        
+        
+        ,
+      
+    
+    {\displaystyle {\hat {f}}(t)=\int _{-\infty }^{\infty }f(x)e^{-itx}\,dx=e^{-i\mu t}e^{-{\frac {1}{2}}\sigma ^{2}t^{2}}\,,}
+  
+
+where ⁠
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  
+⁠ is the imaginary unit. If the mean 
+  
+    
+      
+        μ
+        =
+        0
+      
+    
+    {\textstyle \mu =0}
+  
+, the first factor is 1, and the Fourier transform is, apart from a constant factor, a normal density on the frequency domain, with mean 0 and variance ⁠
+  
+    
+      
+        1
+        
+          /
+        
+        
+          σ
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 1/\sigma ^{2}}
+  
+⁠. In particular, the standard normal distribution ⁠
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+⁠ is an eigenfunction of the Fourier transform.
+In probability theory, the Fourier transform of the probability distribution of a real-valued random variable ⁠
+  
+    
+      
+        X
+      
+    
+    {\displaystyle X}
+  
+⁠ is closely connected to the characteristic function 
+  
+    
+      
+        
+          φ
+          
+            X
+          
+        
+        (
+        t
+        )
+      
+    
+    {\textstyle \varphi _{X}(t)}
+  
+ of that variable, which is defined as the expected value of 
+  
+    
+      
+        
+          e
+          
+            i
+            t
+            X
+          
+        
+      
+    
+    {\textstyle e^{itX}}
+  
+, as a function of the real variable ⁠
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+⁠ (the frequency parameter of the Fourier transform). This definition can be analytically extended to a complex-value variable ⁠
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  
+⁠. The relation between both is:
+
+  
+    
+      
+        
+          φ
+          
+            X
+          
+        
+        (
+        t
+        )
+        =
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        −
+        t
+        )
+        
+        .
+      
+    
+    {\displaystyle \varphi _{X}(t)={\hat {f}}(-t)\,.}
+  
+
+The real and imaginary parts of 
+  
+    
+      
+        
+          
+            
+              f
+              ^
+            
+          
+        
+        (
+        t
+        )
+        =
+        E
+        ⁡
+        [
+        
+          e
+          
+            −
+            i
+            t
+            x
+          
+        
+        ]
+        =
+        
+          e
+          
+            −
+            i
+            μ
+            t
+          
+        
+        
+          e
+          
+            −
+            
+              
+                1
+                2
+              
+            
+            
+              σ
+              
+                2
+              
+            
+            
+              t
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {f}}(t)=\operatorname {E} [e^{-itx}]=e^{-i\mu t}e^{-{\frac {1}{2}}\sigma ^{2}t^{2}}}
+  
+ give:
+
+  
+    
+      
+        E
+        ⁡
+        [
+        cos
+        ⁡
+        (
+        t
+        x
+        )
+        ]
+        =
+        cos
+        ⁡
+        (
+        μ
+        t
+        )
+        
+          e
+          
+           
+
+[Article truncated for the handbook source; cover the material above.]

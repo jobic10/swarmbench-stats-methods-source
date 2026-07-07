@@ -1,0 +1,18 @@
+{
+ "M01": "Central limit theorem",
+ "M02": "Bayes' theorem",
+ "M03": "Maximum likelihood estimation",
+ "M04": "Markov chain",
+ "M05": "Normal distribution",
+ "M06": "Poisson distribution",
+ "M07": "Student's t-test",
+ "M08": "Confidence interval",
+ "M09": "Linear regression",
+ "M10": "Law of large numbers",
+ "M11": "Monte Carlo method",
+ "M12": "Principal component analysis",
+ "M13": "Analysis of variance",
+ "M14": "Logistic regression",
+ "M15": "Bootstrapping (statistics)",
+ "M16": "Chi-squared test"
+}
